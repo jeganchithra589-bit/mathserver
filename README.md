@@ -72,11 +72,20 @@ Publish the website in the given URL.
         
     </div>
     </form>
-    
-</body>    
-</html>
+    </body>
+    </html>
 
-view.py
+url.py
+
+from django.contrib import admin
+from django.urls import path
+from myapp import views
+urlpatterns =[
+    path('admin/',admin.site.urls),
+    path('',views.power,name="jegan")
+]
+
+views.py
 
 from django.shortcuts import render
 
@@ -100,21 +109,12 @@ def power(request):
         print('Power=',power)
     return render(request,'myapp/power.html',context)
 
-
-url.py
-
-from django.contrib import admin
-from django.urls import path
-from myapp import views
-urlpatterns =[
-    path('admin/',admin.site.urls),
-    path('',views.power,name="jegan")
-]
 ```
-
 # SERVER SIDE PROCESSING:
-![alt text](<../Screenshot (77).png>)
+
+![alt text](<Screenshot (77).png>)
 # HOMEPAGE:
-![alt text](<../Screenshot (75).png>)
+![alt text](<Screenshot (75).png>)
+
 # RESULT:
 The program for performing server side processing is completed successfully.
