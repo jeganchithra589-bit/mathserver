@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>POWER CALCULATOR</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', sans-serif;
+            text-align: center;
+            margin-top: 50px
+           
+        }
+        .container {
+            max-width: 300px;
+            margin: auto;
+            padding: 30px;
+            border: 10px solid=cyan;
+            background-color:tan;
+            border-radius:20px;
+        }
+        input, button {
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body style="background:linear-gradient(red,rgb(11, 0, 128),cyan);">
+    <body><form method="POST">
+        {% csrf_token %}
+    <div class="container">
+        <h2>POWER CALCULATOR </h2>
+      Current (A):
+        <input type="text" name="current" 
+        placeholder="{{current}}"></input><br>
+      Resistance (ohms):
+        <input type="text" name="resistance" 
+        placeholder="{{resistance}}"></input><br>
+        <button type="submit">CALCULATOR</button><br>
+      POWER:<input type="text" name="power" 
+        value="{{power}}"></input>W</div>
+        
+    </div>
+    </form>
+    
+</body>
+      
+</html>
+
+
+
+
+    
