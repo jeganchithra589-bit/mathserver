@@ -115,8 +115,8 @@ def power(request):
 ```
     
 # SERVER SIDE PROCESSING:
-![alt text](<Screenshot (73).png>)
+![SS](<Screenshot (73).png>)
 # HOMEPAGE:
-![alt text](<Screenshot (75).png>)
+![HP](<Screenshot (75).png>)
 # RESULT:
 The program for performing server side processing is completed successfully.
